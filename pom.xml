@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.0</version>
+        <version>2.3.10.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.xeonscan</groupId>
@@ -14,7 +14,7 @@
     <name>mybatis-plus-test-1217</name>
     <description>mybatis-plus-test-1217</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>8</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -37,6 +37,20 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.2.8</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -44,6 +58,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.3.10.RELEASE</version>
                 <configuration>
                     <excludes>
                         <exclude>
