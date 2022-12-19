@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/heima?useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://10.0.0.197:3306/heima?useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: Czh2000.
     type: com.alibaba.druid.pool.DruidDataSource
