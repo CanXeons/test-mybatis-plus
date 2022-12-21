@@ -31,4 +31,9 @@ public class HotelAPIController {
     public List<Hotel> HotelAPIAll(){
         return hotelService.selectAll();
     }
+
+    @GetMapping("help")
+    public String sendHelp(){
+        return "获取所有：/hotels,id获取：/hotel/id";
+    }
 }
