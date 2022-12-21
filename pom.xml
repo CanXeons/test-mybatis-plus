@@ -15,6 +15,8 @@
     <description>mybatis-plus-test-1217</description>
     <properties>
         <java.version>8</java.version>
+        <!-- docker镜像名称前缀 -->
+        <docker.image.prefix>bugCan</docker.image.prefix>
     </properties>
     <dependencies>
         <dependency>
@@ -66,6 +68,24 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                </configuration>
+            </plugin>
+            <!-- docker插件-->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <configuration>
+                    <dockerHost>http://71.136.113.199:2375</dockerHost>
+                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+                    <dockerDirectory>src/main/docker</dockerDirectory>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}</include>
+                        </resource>
+                    </resources>
                 </configuration>
             </plugin>
         </plugins>

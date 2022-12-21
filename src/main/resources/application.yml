@@ -1,19 +1,19 @@
-spring:
-  datasource:
-    url: jdbc:mysql://10.0.0.197:3306/heima?useSSL=false&allowPublicKeyRetrieval=true
-    username: root
-    password: Czh2000.
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
-server:
-  port: 15000
-
 #spring:
 #  datasource:
-#    url: jdbc:mysql://115.219.199.194:3306/heima?useSSL=false&allowPublicKeyRetrieval=true
+#    url: jdbc:mysql://127.0.0.1:3306/heima?useSSL=false&allowPublicKeyRetrieval=true
 #    username: root
 #    password: Czh2000.
 #    type: com.alibaba.druid.pool.DruidDataSource
 #    driver-class-name: com.mysql.cj.jdbc.Driver
 #server:
-#  port: 8080
+#  port: 15000
+
+spring:
+  datasource:
+    url: jdbc:mysql://115.219.199.194:3306/heima?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: Czh2000.
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8080
