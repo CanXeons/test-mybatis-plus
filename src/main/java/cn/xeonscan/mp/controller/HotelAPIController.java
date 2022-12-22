@@ -34,6 +34,6 @@ public class HotelAPIController {
 
     @GetMapping("help")
     public String sendHelp(){
-        return "接口列表：/hotels,id获取：/hotel/{id}";
+        return "接口列表: /hotels,id获取：/hotel/{id}";
     }
 }
